@@ -41,19 +41,19 @@ class Main
     puts "What should I test for?"
     choice = gets.chomp
     if choice.start_with?("Pali", "pali") then
-      palindrometest()
+      palindrometest
 
     elsif choice.start_with?("Ana", "ana") then
-      anagramtest()
+      anagramtest
 
     elsif !choice.start_with?("Ana", "ana", "Pali", "pali") then
       puts "Please input if I should either test for an Anagram or a Palindrome."
-      choicemethod()
+      choicemethod
 
     end
   end
 
   ######################################################################################################################
 
-  choicemethod()
+  choicemethod
 end
