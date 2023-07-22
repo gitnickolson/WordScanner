@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# rubocop:disable Metrics
+
 def palindrome_test
   puts 'Which word would you like me to test?'
   palindrome = gets.chomp
@@ -61,3 +63,5 @@ end
 ########################################################################################################################
 
 choice_method
+
+# rubocop:enable Metrics
