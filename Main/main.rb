@@ -4,12 +4,16 @@ def palindrome_test
   puts 'Which word would you like me to test?'
   palindrome = gets.chomp
   word_reverse = palindrome.reverse
+  result = palindrome
+
+  palindrome = palindrome.downcase
+  word_reverse = word_reverse.downcase
 
   if word_reverse == palindrome
-    puts "#{palindrome} is a palindrome."
+    puts "#{result} is a palindrome."
 
   else
-    puts "#{palindrome} is not a palindrome."
+    puts "#{result} is not a palindrome."
 
   end
 end
@@ -20,6 +24,9 @@ def anagram_test
   anagram = gets.chomp
   puts "What's the second word?"
   anagram1 = gets.chomp
+  anagram = anagram.downcase
+  anagram1 = anagram1.downcase
+
   anagram2 = anagram.chars
   anagram3 = anagram1.chars
 
